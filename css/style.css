@@ -41,6 +41,11 @@ ul {
     flex-direction: row;
 }
 
+.col,
+.large-col {
+    width: 100%;
+}
+
 /* Utilities */
 .flex {
     display: flex;
@@ -88,26 +93,32 @@ header .container {
 }
 
 .section-1 .container {
-    margin: 3rem auto 5rem;
+    padding: 3rem 2rem 5rem;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    margin-bottom: 1.5rem;
 }
 
-.large-col {
-    width: 100%;
-}
-
-.col {
-    width: 100%;
-}
-
-.card {
+.section-1 .card {
     background-color: var(--lightblue);
     /* debug */
     height: 15rem;
+}
+
+/* Section 2 */
+.section-2 {
+    background-color: var(--violet);
+}
+
+.section-2 .container {
+    padding: 5rem 2rem 3rem;
+}
+
+.section-2 .card {
+    background-color: var(--white);
+    /* debug */
+    height: 20rem;
 }
