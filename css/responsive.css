@@ -1,0 +1,24 @@
+/* Tablet responsive */
+@media screen and (min-width: 768px) {
+    
+}
+
+/* Desktop responsive */
+@media screen and (min-width: 992px) {
+    .container {
+        width: 60%;
+    }
+    
+    .menu {
+        display: block;
+    }
+    
+    .bars {
+        display: none;
+    }
+}
+
+/* Large desktop resposive */
+@media screen and (min-width: 1200px) {
+
+}
