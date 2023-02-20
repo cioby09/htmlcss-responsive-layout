@@ -1,3 +1,14 @@
+/* Variables */
+:root {
+    --blue: #0084FD;
+    --lightblue: #B5DDFF;
+    --violet: #9792E4;
+    --yellow: #FDC15F;
+    --grey: #333333;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
 /* Reset */
 * {
     margin: 0;
@@ -7,4 +18,88 @@
 
 img {
     max-width: 100%;
+}
+
+/* Common */
+body {
+    font-family: "PT sans", sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    flex-direction: row;
+}
+
+/* Utilities */
+.flex {
+    display: flex;
+}
+
+/* Header */
+header {
+    height: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 1rem 2rem;
+}
+
+header .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bars {
+    font-size: 1.5rem;
+}
+
+.menu {
+    display: none;
+}
+
+.menu ul {
+    align-items: center;
+}
+
+.menu li {
+    padding: 0 1rem;
+}
+
+.menu .button {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* Tablet responsive */
+@media screen and (min-width: 768px) {
+    
+}
+
+/* Desktop responsive */
+@media screen and (min-width: 992px) {
+    .container {
+        width: 60%;
+    }
+    
+    .menu {
+        display: block;
+    }
+    
+    .bars {
+        display: none;
+    }
+}
+
+/* Large desktop resposive */
+@media screen and (min-width: 1200px) {
+
 }
