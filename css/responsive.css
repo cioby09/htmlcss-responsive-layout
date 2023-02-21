@@ -1,35 +1,60 @@
 /* Tablet responsive */
 @media screen and (min-width: 768px) {
-    .large-col {
-        width: calc(((100% / 3) * 2) - (1.5rem / 3));
+    /* Section 1 */
+    .section-1 .col:first-child {
+        width: calc((100% / 3) * 2);
     }
 
     .section-1 .col {
-        width: calc((100% / 3) - ((1.5rem / 3) * 2));
+        width: calc(100% / 3);
     }
 
-    .section-1 .row:first-child {
-        margin-bottom: 1.5rem;
+    .section-1 img {
+        width: 50%;
     }
+    /* /Section 1 */
 }
 
 /* Desktop responsive */
 @media screen and (min-width: 992px) {
+    /* Common */
     .container {
         width: 65%;
     }
 
+    /* Header */
     .menu {
         display: block;
+    }
+    
+    
+    .menu ul {
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .menu .button {
+        background-color: var(--white);
+        color: var(--black);
+        padding: 0.4rem 0.8rem;
+        border-radius: 1rem;
     }
     
     .bars {
         display: none;
     }
 
-    .section-2 .col {
-        width: calc(50% - (1.5rem / 2));
+    /* Section 1 */
+    .section-1 img {
+        
     }
+    /* /Section 1 */
+
+    /* Section 2 */
+    .section-2 .col {
+        width: 50%;
+    }
+    /* /Section 2 */
 }
 
 /* Large desktop resposive */

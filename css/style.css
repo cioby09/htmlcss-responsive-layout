@@ -5,6 +5,7 @@
     --violet: #9792E4;
     --yellow: #FDC15F;
     --grey: #333333;
+    --lightgrey: #5A6E7F;
     --white: #FFFFFF;
     --black: #000000;
 }
@@ -41,9 +42,19 @@ ul {
     flex-direction: row;
 }
 
-.col,
-.large-col {
-    width: 100%;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 1.2rem;
+    height: 100%;
+}
+
+.card-icon {
+    color: var(--blue);
+    font-size: 5rem;
 }
 
 /* Utilities */
@@ -72,19 +83,6 @@ header .container {
     display: none;
 }
 
-.menu ul {
-    align-items: center;
-}
-
-.menu li {
-    padding: 0 1rem;
-}
-
-.menu .button {
-    background-color: var(--white);
-    color: var(--black);
-}
-
 /* Main */
 
 /* Section 1 */
@@ -93,19 +91,50 @@ header .container {
 }
 
 .section-1 .container {
-    padding: 3rem 2rem 5rem;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    padding: 3rem 1.25rem 5rem;
 }
 
 .section-1 .card {
     background-color: var(--lightblue);
-    /* debug */
-    height: 15rem;
+    font-weight: 700;
+    padding: 2rem 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-1 .big-card {
+    text-align: left;
+    padding-bottom: 0;
+}
+
+.section-1 .col {
+    width: 100%;
+    padding: 0.75rem;
+}
+
+.card-title {
+    color: var(--blue);
+}
+
+.card p {
+    color: var(--lightgrey);
+    line-height: 1.7rem;
+}
+
+.section-1 .button {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 0.7rem;
+    border-radius: 1.5rem;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+.section-1 a {
+    width: 100%;
+    max-width: 13rem;
 }
 
 /* Section 2 */
@@ -114,11 +143,9 @@ header .container {
 }
 
 .section-2 .container {
-    padding: 5rem 2rem 3rem;
+    padding: 5rem 1.25rem 3rem;
 }
 
 .section-2 .card {
     background-color: var(--white);
-    /* debug */
-    height: 20rem;
 }
