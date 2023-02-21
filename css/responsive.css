@@ -45,9 +45,24 @@
     }
 
     /* Section 1 */
-    .section-1 img {
-        
+    .section-1 .card-1 img {
+        width: 100%;
     }
+
+    .row-card {
+        display: flex;
+        height: 100%;
+    }
+    
+    .col-card-1,
+    .col-card-2 {
+        width: 50%;
+    }
+
+    .col-card-2 {
+        align-items: end;
+    }
+
     /* /Section 1 */
 
     /* Section 2 */
@@ -57,7 +72,6 @@
 
     .section-2 .card-1 {
         flex-direction: column;
-        justify-content: end;
     }
 
     .section-2 .row {
@@ -65,12 +79,17 @@
     }
 
     .section-2 .card-1 img {
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
     }
 
     .section-2 .col:last-child {
-        padding-top: 15rem;
+        align-items: end;
     }
+
+    .section-2 .card-2 {
+        height: auto;
+    }
+
     /* /Section 2 */
 }
 

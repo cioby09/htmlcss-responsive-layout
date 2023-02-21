@@ -118,6 +118,10 @@ header .container {
     color: var(--blue);
 }
 
+.section-1 .card-1 .title-card {
+    margin-bottom: 2rem;
+}
+
 .section-1 [class^="card"] p {
     color: var(--lightgrey);
     line-height: 1.7rem;
@@ -126,6 +130,7 @@ header .container {
 .section-1 .button {
     background-color: var(--blue);
     color: var(--white);
+    margin: 2rem 0;
     padding: 0.7rem;
     border-radius: 1.5rem;
     letter-spacing: 0.2em;
@@ -133,6 +138,7 @@ header .container {
 }
 
 .section-1 a {
+    display: inline-block;
     width: 100%;
     max-width: 13rem;
 }
@@ -176,8 +182,13 @@ header .container {
     padding: 1rem;
     text-align: center;
     flex-wrap: wrap;
+    flex-direction: column;
     gap: 1rem;
     justify-content: center;
+}
+
+.section-2 .card-2 img {
+    align-self: center;
 }
 
 .section-2 .card-2 p {
