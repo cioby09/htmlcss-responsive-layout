@@ -52,7 +52,24 @@
 
     /* Section 2 */
     .section-2 .col {
-        width: 50%;
+        width: calc(50% - 1rem);
+    }
+
+    .section-2 .card-1 {
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .section-2 .row {
+        gap: 2rem;
+    }
+
+    .section-2 .card-1 img {
+        margin-bottom: 5rem;
+    }
+
+    .section-2 .col:last-child {
+        padding-top: 15rem;
     }
     /* /Section 2 */
 }

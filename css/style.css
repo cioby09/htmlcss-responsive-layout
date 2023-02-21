@@ -47,12 +47,12 @@ ul {
     flex-wrap: wrap;
 }
 
-.card {
+[class^="card"] {
     border-radius: 1.2rem;
     height: 100%;
 }
 
-.card-icon {
+.icon-card {
     color: var(--blue);
     font-size: 5rem;
 }
@@ -94,7 +94,7 @@ header .container {
     padding: 3rem 1.25rem 5rem;
 }
 
-.section-1 .card {
+.section-1 [class^="card"] {
     background-color: var(--lightblue);
     font-weight: 700;
     padding: 2rem 2rem;
@@ -104,7 +104,7 @@ header .container {
     text-align: center;
 }
 
-.section-1 .big-card {
+.section-1 .card-1 {
     text-align: left;
     padding-bottom: 0;
 }
@@ -114,11 +114,11 @@ header .container {
     padding: 0.75rem;
 }
 
-.card-title {
+.section-1 .title-card {
     color: var(--blue);
 }
 
-.card p {
+.section-1 [class^="card"] p {
     color: var(--lightgrey);
     line-height: 1.7rem;
 }
@@ -146,6 +146,47 @@ header .container {
     padding: 5rem 1.25rem 3rem;
 }
 
-.section-2 .card {
+.section-2 .col {
+    padding: 0.75rem;
+}
+
+.section-2 .card-1 {
+    background-color: transparent;
+    color: var(--white);
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.section-2 .card-1 img {
+    padding-bottom: 2rem;
+}
+
+.section-2 .card-1 .title-card {
+    font-size: 2.3rem;
+}
+
+.section-2 .card-1 p {
+    color: var(--white);
+    line-height: 1.7rem;
+}
+
+.section-2 .card-2 {
     background-color: var(--white);
+    border-radius: 3rem;
+    padding: 1rem;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.section-2 .card-2 p {
+    font-style: italic;
+}
+
+.section-2 .card-2 i {
+    background-color: var(--violet);
+    padding: 15px 18px;
+    border-radius: 50%;
+    margin: 1rem 0;
 }
