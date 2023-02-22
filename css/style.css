@@ -48,7 +48,6 @@ ul {
 }
 
 [class^="card"] {
-    border-radius: 1.2rem;
     height: 100%;
 }
 
@@ -64,10 +63,13 @@ ul {
 
 /* Header */
 header {
-    height: 100%;
     background-color: var(--blue);
+    width: 100%;
     color: var(--white);
     padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
 
 header .container {
@@ -91,12 +93,13 @@ header .container {
 }
 
 .section-1 .container {
-    padding: 3rem 1.25rem 5rem;
+    padding: 7rem 1.25rem 5rem;
 }
 
 .section-1 [class^="card"] {
     background-color: var(--lightblue);
     font-weight: 700;
+    border-radius: 1.2rem;
     padding: 2rem 2rem;
     gap: 2rem;
     flex-wrap: wrap;
@@ -116,6 +119,7 @@ header .container {
 
 .section-1 .title-card {
     color: var(--blue);
+    font-size: 1.5rem;
 }
 
 .section-1 .card-1 .title-card {
@@ -191,6 +195,10 @@ header .container {
     align-self: center;
 }
 
+.section-2 .card-2 .title-card {
+    font-size: 1.5rem;
+}
+
 .section-2 .card-2 p {
     font-style: italic;
 }
@@ -200,4 +208,61 @@ header .container {
     padding: 15px 18px;
     border-radius: 50%;
     margin: 1rem 0;
+}
+
+/* Section 3 */
+.section-3 {
+    background-color: var(--white);
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+.section-3 .container {
+    padding: 1rem 1.25rem 5rem;
+}
+
+.section-3 .col {
+    padding: 0.75rem;
+}
+
+.section-3 [class^="card"] {
+    background-color: var(--violet);
+    color: var(--white);
+    padding: 2rem 1rem;
+    border-radius: 3rem;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.section-3 .card-1 {
+    background-color: transparent;
+    color: var(--black);
+}
+
+.section-3 .card-1 .section-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.section-3 .card-1 .section-subtitle {
+    color: var(--violet);
+    font-size: 2.2rem;
+    line-height: 3rem;
+}
+
+.section-3 .title-card {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 1.5rem;
+}
+
+.section-3 img {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 60%;
+    aspect-ratio: 1 / 1;
 }

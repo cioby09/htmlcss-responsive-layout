@@ -12,7 +12,20 @@
     .section-1 img {
         width: 50%;
     }
-    /* /Section 1 */
+
+    /* Section 3 */
+    .section-3 .card-2,
+    .section-3 .card-3,
+    .section-3 .card-4 {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+    }
+
+    .section-3 img {
+        width: 80%;
+    }
 }
 
 /* Desktop responsive */
@@ -91,9 +104,4 @@
     }
 
     /* /Section 2 */
-}
-
-/* Large desktop resposive */
-@media screen and (min-width: 1200px) {
-
 }
